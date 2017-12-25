@@ -1,2 +1,2 @@
-# befront-frontend
-Frontend
+# befront-app-generator
+Generator react app

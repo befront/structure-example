@@ -40,6 +40,7 @@ const config = {};
 */
 config.resolve = {
   alias: {
+    sharedComponents: path.resolve(__dirname, appConfig.APP_SHARED_COMPONENTS_DIRECTORY),
     appConfig: path.resolve(__dirname, appConfig.APP_CONFIG_DIRECTORY),
     appComponents: path.resolve(__dirname, appConfig.APP_COMPONENTS_DIRECTORY),
     appPages: path.resolve(__dirname, appConfig.APP_PAGES_DIRECTORY)
@@ -52,7 +53,7 @@ config.resolve = {
 * Entry point of the application
 */
 config.entry = {
-  app: [appConfig.APP_ENTRY_DIRECTORY]
+  app: `${[appConfig.APP_ENTRY_DIRECTORY]}/app`
 };
 
 /**

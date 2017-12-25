@@ -1,15 +1,18 @@
 export default {
   // ENTRY FILE FOR REACT APPLICATION
-  APP_ENTRY_DIRECTORY: './client/app',
+  APP_ENTRY_DIRECTORY: './src',
 
   // APP CONFIG FOLDER URL
-  APP_CONFIG_DIRECTORY: './client/config',
+  APP_CONFIG_DIRECTORY: './src/config',
+
+  // APP SHARED COMPONENTS FOLDER URL
+  APP_SHARED_COMPONENTS_DIRECTORY: './src/shared/components',
 
   // APP COMPONENTS FOLDER URL
-  APP_COMPONENTS_DIRECTORY: './client/app/components',
+  APP_COMPONENTS_DIRECTORY: './src/app/components',
 
   // APP PAGES FOLDER URL
-  APP_PAGES_DIRECTORY: './client/app/pages',
+  APP_PAGES_DIRECTORY: './src/app/pages',
 
   // BUILD FOLDER URL FOR REACT APPLICATION
   BUILD_DIRECTORY: './build',
@@ -27,10 +30,10 @@ export default {
   IMAGES_DIRECTORY: 'img',
 
   // COMMON ASSETS FOLDER URL FOR REACT APPLICATION
-  ASSETS_DIRECTORY: './client/assets',
+  ASSETS_DIRECTORY: './src/assets',
 
   // HTML FILE URL FOR REACT APPLICATION
-  HTML_DIRECTORY: './client/public',
+  HTML_DIRECTORY: './src/public',
 
   // DEVELOPMENT SERVER URL FOR REACT APPLICATION
   DEV_SERVER_URL: 'http://localhost:3000',
