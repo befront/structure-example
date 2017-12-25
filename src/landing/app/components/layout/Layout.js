@@ -11,6 +11,7 @@ type Props = {
 const Layout = ({ children }: Props) => (
   <div className={styles.layout}>
     LAYOUT
+    { children }
   </div>
 );
 

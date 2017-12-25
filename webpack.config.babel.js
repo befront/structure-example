@@ -19,9 +19,9 @@ import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import OptimizeCSSAssets from 'optimize-css-assets-webpack-plugin';
 import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
-import adminAppConfig from './config/admin/config';
-import landingAppConfig from './config/landing/config';
-import siteAppConfig from './config/site/config';
+import adminAppConfig from './config/config.admin';
+import landingAppConfig from './config/config.landing';
+import siteAppConfig from './config/config.site';
 
 let appConfig = {};
 
@@ -36,8 +36,6 @@ switch (process.env.APP_NAME) {
     appConfig = siteAppConfig;
     break;
 }
-
-console.log(appConfig);
 
 /**
 * VARIABLES
