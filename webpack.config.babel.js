@@ -19,7 +19,25 @@ import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import OptimizeCSSAssets from 'optimize-css-assets-webpack-plugin';
 import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
-import appConfig from './config';
+import adminAppConfig from './config/admin/config';
+import landingAppConfig from './config/landing/config';
+import siteAppConfig from './config/site/config';
+
+let appConfig = {};
+
+switch (process.env.APP_NAME) {
+  case 'admin':
+    appConfig = adminAppConfig;
+    break;
+  case 'landing':
+    appConfig = landingAppConfig;
+    break;
+  case 'site':
+    appConfig = siteAppConfig;
+    break;
+}
+
+console.log(appConfig);
 
 /**
 * VARIABLES
@@ -244,7 +262,7 @@ config.module = {
 * Reference: https://webpack.js.org/configuration/dev-server/
 */
 config.devServer = {
-  contentBase: path.resolve(__dirname, './client'),
+  contentBase: path.resolve(__dirname, appConfig.APP_ENTRY_DIRECTORY),
   historyApiFallback: true,
   inline: true,
   open: true,

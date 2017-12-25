@@ -4,10 +4,14 @@
   "repository": "https://github.com/befront/befront-app-generator.git",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server -d --hot --config webpack.config.babel.js --watch",
-    "build": "NODE_ENV=development webpack",
+    "admin_dev": "APP_NAME=admin NODE_ENV=development webpack-dev-server -d --hot --config webpack.config.babel.js --watch",
+    "site_dev": "APP_NAME=site NODE_ENV=development webpack-dev-server -d --hot --config webpack.config.babel.js --watch",
+    "landing_dev": "APP_NAME=landing NODE_ENV=development webpack-dev-server -d --hot --config webpack.config.babel.js --watch",
+    "admin_build": "APP_NAME=admin NODE_ENV=development webpack",
+    "site_build": "APP_NAME=site NODE_ENV=development webpack",
+    "landing_build": "APP_NAME=landing NODE_ENV=development webpack",
     "test": "jest",
-    "precommit": "eslint client --fix && flow"
+    "precommit": "eslint src --fix && flow"
   },
   "jest": {
     "moduleNameMapper": {
