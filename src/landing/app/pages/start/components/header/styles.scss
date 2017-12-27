@@ -1,0 +1,61 @@
+$header-background-color: #093444;
+
+.header {
+    background-color: $header-background-color;
+    padding: 15px 0;
+}
+
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    vertical-align: top;
+    width: 97px;
+    height: 23px;
+}
+
+@media all and (min-width: $screen-sm-min) {
+    .header {
+        padding: 20px 15px;
+    }
+
+    .img {
+        width: 107px;
+        height: 25px;
+    }
+
+    .btn {
+        width: 115px;
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .header {
+        padding: 25px;
+    }
+
+    .img {
+        width: 132px;
+        height: 30px;
+    }
+
+    .btn {
+        width: 160px;
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .header {
+        padding: 25px 15px;
+    }
+}
+
+@media all and (min-width: $screen-xl-min) {
+    .header {
+        padding: 25px 30px;
+    }
+}

@@ -7,20 +7,15 @@ import createHistory from 'history/createBrowserHistory';
 
 import { store, routes } from 'appConfig';
 
-import { Layout } from 'appComponents/layout';
-import { Button } from 'sharedComponents/button';
+import 'appAssets/styles/main.scss';
+
+import { StartPage } from 'appPages/start';
 
 const history = createHistory();
 
 render(
   <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <Layout>
-        { routes.map(route => (
-          <Route path={route.path} component={route.component} />
-        ))}
-      </Layout>
-    </ConnectedRouter>
+    <StartPage />
   </Provider>,
   document.querySelector('.app')
 );

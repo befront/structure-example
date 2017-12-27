@@ -36,10 +36,10 @@ export default {
     HTML_DIRECTORY: './src/landing/public',
   
     // DEVELOPMENT SERVER URL FOR REACT APPLICATION
-    DEV_SERVER_URL: 'http://localhost:3000',
+    DEV_SERVER_URL: 'http://localhost:3000/',
   
     // PRODUCTION SERVER URL FOR REACT APPLICATION
-    PRODUCTION_SERVER_URL: 'http://befront.io',
+    PRODUCTION_SERVER_URL: 'http://befront.io/',
   
     // WEBPACK IMAGE URL FOR COMMAND LINE
     WEBPACK_NOTIFIER_IMG: './webpack-logo.png'

@@ -59,7 +59,8 @@ config.resolve = {
     sharedComponents: path.resolve(__dirname, appConfig.APP_SHARED_COMPONENTS_DIRECTORY),
     appConfig: path.resolve(__dirname, appConfig.APP_CONFIG_DIRECTORY),
     appComponents: path.resolve(__dirname, appConfig.APP_COMPONENTS_DIRECTORY),
-    appPages: path.resolve(__dirname, appConfig.APP_PAGES_DIRECTORY)
+    appPages: path.resolve(__dirname, appConfig.APP_PAGES_DIRECTORY),
+    appAssets: path.resolve(__dirname, appConfig.ASSETS_DIRECTORY)
   }
 };
 

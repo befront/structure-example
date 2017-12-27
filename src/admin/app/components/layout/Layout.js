@@ -10,7 +10,6 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <div className={styles.layout}>
-    LAYOUT
   </div>
 );
 

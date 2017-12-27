@@ -1,0 +1,176 @@
+$footer-background-color: #051d26;
+
+$footer-copyright-text-color: #fff;
+
+$footer-mail-color: #74abbf;
+
+$footer-twitter-link-color: #059ff5;
+$footer-hover-twitter-link-color: #60c0f6;
+$footer-active-twitter-link-color: #0779b8;
+
+$footer-vk-link-color: #4a74a5;
+$footer-hover-vk-link-color: #6592c7;
+$footer-active-vk-link-color: #2e5583;
+
+$footer-facebook-link-color: #4065b4;
+$footer-hover-facebook-link-color: #5f82cd;
+$footer-active-facebook-link-color: #24448a;
+
+.footer {
+    background-color: $footer-background-color;
+    padding: 20px 15px;
+}
+
+.info {
+    text-align: center;
+}
+
+.copyright {
+    font: 0.9375em "UbuntuMedium", sans-serif;
+    line-height: 1;
+    color: $footer-copyright-text-color;
+}
+
+.mail {
+    font: 0.9375em "UbuntuMedium", sans-serif;
+    line-height: 1;
+    color: $footer-mail-color;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.link {
+    font: 1.25em "UbuntuMedium", sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: color .3s ease;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom: 1px solid;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &__twitter {
+        color: $footer-twitter-link-color;
+
+        &:hover {
+            color: $footer-hover-twitter-link-color;
+            border-color: $footer-hover-twitter-link-color;
+        }
+
+        &:active {
+            color: $footer-active-twitter-link-color;
+            border-color: $footer-active-twitter-link-color;
+        }
+    }
+
+    &__vk {
+        color: $footer-vk-link-color;
+
+        &:hover {
+            color: $footer-hover-vk-link-color;
+            border-color: $footer-hover-vk-link-color;
+        }
+
+        &:active {
+            color: $footer-active-vk-link-color;
+            border-color: $footer-active-vk-link-color;
+        }
+    }
+
+    &__facebook {
+        color: $footer-facebook-link-color;
+
+        &:hover {
+            color: $footer-hover-facebook-link-color;
+            border-color: $footer-hover-facebook-link-color;
+        }
+
+        &:active {
+            color: $footer-active-facebook-link-color;
+            border-color: $footer-active-facebook-link-color;
+        }
+    }
+}
+
+@media all and (min-width: $screen-sm-min) {
+    .nav {
+        text-align: left;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .link {
+        margin-top: 0;
+        margin-left: 40px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .info {
+        text-align: left;
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .footer {
+        padding: 25px;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        margin-top: 0;
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .link {
+        margin-left: 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (min-width: $screen-xl-min) {
+    .footer {
+        padding: 25px 30px;
+    }
+
+    .link {
+        margin-left: 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
