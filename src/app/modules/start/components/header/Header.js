@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Button } from 'sharedComponents/button';
+import { Button } from 'appComponents/core/button';
 
 import gridStyles from 'appAssets/styles/grid.scss';
 import styles from './styles.scss';

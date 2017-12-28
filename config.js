@@ -1,21 +1,18 @@
 export default {
     // ENTRY FILE FOR REACT APPLICATION
-    APP_ENTRY_DIRECTORY: './src/site',
+    APP_ENTRY_DIRECTORY: './src',
   
     // APP CONFIG FOLDER URL
-    APP_CONFIG_DIRECTORY: './src/site/config',
-  
-    // APP SHARED COMPONENTS FOLDER URL
-    APP_SHARED_COMPONENTS_DIRECTORY: './src/shared/components',
+    APP_CONFIG_DIRECTORY: './src/config',
   
     // APP COMPONENTS FOLDER URL
-    APP_COMPONENTS_DIRECTORY: './src/site/app/components',
+    APP_COMPONENTS_DIRECTORY: './src/app/components',
   
-    // APP PAGES FOLDER URL
-    APP_PAGES_DIRECTORY: './src/site/app/pages',
+    // APP MODULES FOLDER URL
+    APP_MODULES_DIRECTORY: './src/app/modules',
   
     // BUILD FOLDER URL FOR REACT APPLICATION
-    BUILD_DIRECTORY: './build/site',
+    BUILD_DIRECTORY: './build',
   
     // FONTS FOLDER URL FOR REACT APPLICATION
     FONTS_DIRECTORY: 'fonts',
@@ -30,16 +27,16 @@ export default {
     IMAGES_DIRECTORY: 'img',
   
     // COMMON ASSETS FOLDER URL FOR REACT APPLICATION
-    ASSETS_DIRECTORY: './src/site/assets',
+    ASSETS_DIRECTORY: './src/assets',
   
     // HTML FILE URL FOR REACT APPLICATION
-    HTML_DIRECTORY: './src/site/public',
+    HTML_DIRECTORY: './src/public',
   
     // DEVELOPMENT SERVER URL FOR REACT APPLICATION
-    DEV_SERVER_URL: 'http://localhost:3000',
+    DEV_SERVER_URL: 'http://localhost:3000/',
   
     // PRODUCTION SERVER URL FOR REACT APPLICATION
-    PRODUCTION_SERVER_URL: 'http://befront.io',
+    PRODUCTION_SERVER_URL: 'http://befront.io/',
   
     // WEBPACK IMAGE URL FOR COMMAND LINE
     WEBPACK_NOTIFIER_IMG: './webpack-logo.png'
