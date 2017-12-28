@@ -9,7 +9,7 @@ const StartPage = () => (
     <div className={styles.page}>
         <Header />
         <div className={styles.content}>
-      CONTENT
+            CONTENT
         </div>
         <Footer />
     </div>

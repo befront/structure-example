@@ -1,10 +1,15 @@
-// import { StartPage } from 'appPages/start';
-import { AdminLayout } from 'appComponents/admin/layout';
+import { MainModule } from 'appModules/main';
+import { AdminModule } from 'appModules/admin';
 
 const routes = [
     {
+        path: '/',
+        exact: true,
+        component: MainModule
+    },
+    {
         path: '/admin',
-        component: AdminLayout
+        component: AdminModule
     }
 ];
 
