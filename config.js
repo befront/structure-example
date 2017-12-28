@@ -4,6 +4,12 @@ export default {
   
     // APP CONFIG FOLDER URL
     APP_CONFIG_DIRECTORY: './src/config',
+
+    // APP API FOLDER URL
+    APP_API_DIRECTORY: './src/app/api',
+
+    // APP UTILS FOLDER URL
+    APP_UTILS_DIRECTORY: './src/app/utils',
   
     // APP COMPONENTS FOLDER URL
     APP_COMPONENTS_DIRECTORY: './src/app/components',

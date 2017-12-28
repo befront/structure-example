@@ -5,13 +5,13 @@ import { routerMiddleware, routerReducer } from 'react-router-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 // import { apiService } from 'middlewares';
-// import * as reducers from 'api';
+import * as reducers from 'appAPI';
 
 const composeEnhancer = DEV_SERVER ? composeWithDevTools : compose;
 
 const reducer = combineReducers({
-    routing: routerReducer
-    // ...reducers
+    routing: routerReducer,
+    ...reducers
 });
 
 const initialState = {};
