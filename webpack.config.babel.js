@@ -40,6 +40,7 @@ const config = {};
 */
 config.resolve = {
     alias: {
+        appMiddlewares: path.resolve(__dirname, appConfig.APP_MIDDLEWARES_DIRECTORY),
         appUtils: path.resolve(__dirname, appConfig.APP_UTILS_DIRECTORY),
         appAPI: path.resolve(__dirname, appConfig.APP_API_DIRECTORY),
         appConfig: path.resolve(__dirname, appConfig.APP_CONFIG_DIRECTORY),
@@ -308,7 +309,10 @@ config.plugins.push(
 // Create global constants which can be configured at compile time
 config.plugins.push(
     new webpack.DefinePlugin({ 
-        DEV_SERVER: JSON.stringify(DEV_SERVER)
+        DEV_SERVER: JSON.stringify(DEV_SERVER),
+        API_URL: DEV_SERVER
+            ? JSON.stringify(appConfig.DEV_SERVER_URL)
+            : JSON.stringify(appConfig.PRODUCTION_SERVER_URL)
     })
 );
 

@@ -8,6 +8,9 @@ export default {
     // APP API FOLDER URL
     APP_API_DIRECTORY: './src/app/api',
 
+    // APP MIDDLEWARES FOLDER URL
+    APP_MIDDLEWARES_DIRECTORY: './src/app/middlewares',
+
     // APP UTILS FOLDER URL
     APP_UTILS_DIRECTORY: './src/app/utils',
   
