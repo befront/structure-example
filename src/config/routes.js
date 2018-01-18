@@ -1,15 +1,10 @@
-import { MainModule } from 'appModules/main';
-import { AdminModule } from 'appModules/admin';
+import { HomePage } from 'appPages/home';
 
 const routes = [
     {
         path: '/',
         exact: true,
-        component: MainModule
-    },
-    {
-        path: '/admin',
-        component: AdminModule
+        component: HomePage
     }
 ];
 

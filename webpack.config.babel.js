@@ -46,7 +46,7 @@ config.resolve = {
         appAPI: path.resolve(__dirname, appConfig.APP_API_DIRECTORY),
         appConfig: path.resolve(__dirname, appConfig.APP_CONFIG_DIRECTORY),
         appComponents: path.resolve(__dirname, appConfig.APP_COMPONENTS_DIRECTORY),
-        appModules: path.resolve(__dirname, appConfig.APP_MODULES_DIRECTORY),
+        appPages: path.resolve(__dirname, appConfig.APP_PAGES_DIRECTORY),
         appAssets: path.resolve(__dirname, appConfig.ASSETS_DIRECTORY)
     }
 };

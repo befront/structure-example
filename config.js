@@ -17,8 +17,8 @@ export default {
     // APP COMPONENTS FOLDER URL
     APP_COMPONENTS_DIRECTORY: './src/app/components',
   
-    // APP MODULES FOLDER URL
-    APP_MODULES_DIRECTORY: './src/app/modules',
+    // APP PAGES FOLDER URL
+    APP_PAGES_DIRECTORY: './src/app/pages',
   
     // BUILD FOLDER URL FOR REACT APPLICATION
     BUILD_DIRECTORY: './build',
