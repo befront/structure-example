@@ -25,6 +25,7 @@ import appConfig from './config';
 * VARIABLES
 */
 const DEV_SERVER = process.env.NODE_ENV === 'development';
+const API_URL = DEV_SERVER ? 'http://localhost:3001' : 'https://befront.io';
 
 /**
 * CONFIG
@@ -310,9 +311,7 @@ config.plugins.push(
 config.plugins.push(
     new webpack.DefinePlugin({ 
         DEV_SERVER: JSON.stringify(DEV_SERVER),
-        API_URL: DEV_SERVER
-            ? JSON.stringify(appConfig.DEV_SERVER_URL)
-            : JSON.stringify(appConfig.PRODUCTION_SERVER_URL)
+        API_URL: JSON.stringify(API_URL)
     })
 );
 
