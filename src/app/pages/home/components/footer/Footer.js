@@ -31,8 +31,9 @@ const Footer = () => (
                     <p className={styles.mail}>support@befront.io</p>
                 </div>
                 <div className={styles.nav}>
-                    { links.map(link => (
+                    { links.map((link, index) => (
                         <a
+                            key={index}
                             className={classNames(
                                 styles.link,
                                 { [link.className]: link.className }

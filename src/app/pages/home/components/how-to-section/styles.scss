@@ -16,6 +16,7 @@ $section-item-text-color: #fff;
     line-height: 1;
     color: $section-title-color;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .item {
@@ -48,7 +49,7 @@ $section-item-text-color: #fff;
         font: 1.125em "UbuntuBold", sans-serif;
         line-height: 1;
         color: $section-item-title-color;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     &__text {

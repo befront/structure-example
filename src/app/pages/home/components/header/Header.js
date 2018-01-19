@@ -5,14 +5,14 @@ import { Button } from 'appComponents/core/button';
 import gridStyles from 'appAssets/styles/grid.scss';
 import styles from './styles.scss';
 
-import logoImg from './img/logo.svg';
+import logoImgSrc from './img/logo.svg';
 
 const Header = () => (
     <div className={styles.header}>
         <div className={gridStyles.containerFluid}>
             <div className={styles.content}>
                 <a className={styles.logo}>
-                    <img src={logoImg} className={styles.img} />
+                    <img src={logoImgSrc} className={styles.img} />
                 </a>
                 <Button className={styles.btn}>Войти</Button>
             </div>

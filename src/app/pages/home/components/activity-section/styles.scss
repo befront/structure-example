@@ -16,6 +16,18 @@ $section-item-text-color: #010101;
 
     &__img {
         max-width: 100%;
+        
+        &__game {
+            width: 242px;
+        }
+
+        &__docs {
+            width: 156px;
+        }
+
+        &__map {
+            width: 190px;
+        }   
     }
 
     &__title {
@@ -29,5 +41,47 @@ $section-item-text-color: #010101;
         line-height: 1.47em;
         color: $section-item-text-color;
         margin-top: 10px;
+    }
+}
+
+@media all and (min-width: $screen-sm-min) {
+    .item {
+        &__img {
+            &__docs {
+                width: 163px;
+            }
+    
+            &__map {
+                width: 202px;
+            }   
+        }
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .item {
+        &__img {
+            &__game {
+                width: 256px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $screen-xl-min) {
+    .item {
+        &__img {
+            &__game {
+                width: 296px;
+            }
+
+            &__docs {
+                width: 182px;
+            }
+    
+            &__map {
+                width: 223px;
+            }   
+        }
     }
 }

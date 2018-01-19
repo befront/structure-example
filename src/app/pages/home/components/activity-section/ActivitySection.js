@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import gridStyles from 'appAssets/styles/grid.scss';
 import styles from './styles.scss';
@@ -12,7 +13,10 @@ const ActivitySection = () => (
         <div className={gridStyles.containerFluid}>
             <div className={styles.list}>
                 <div className={styles.item}>
-                    <img src={gameImgSrc} className={styles.item__img} />
+                    <img
+                        src={gameImgSrc}
+                        className={classNames(styles.item__img, styles.item__img__game)} 
+                    />
                     <p className={styles.item__title}>Учись играя</p>
                     <p className={styles.item__text}>
                         Проходи задания и получай бонусы.
@@ -21,7 +25,10 @@ const ActivitySection = () => (
                     </p>
                 </div>
                 <div className={styles.item}>
-                    <img src={docsImgSrc} className={styles.item__img} />
+                    <img
+                        src={docsImgSrc}
+                        className={classNames(styles.item__img, styles.item__img__docs)}
+                    />
                     <p className={styles.item__title}>Множество заданий</p>
                     <p className={styles.item__text}>
                         Задания на любой вкус и для любого
@@ -30,7 +37,10 @@ const ActivitySection = () => (
                     </p>
                 </div>
                 <div className={styles.item}>
-                    <img src={mapImgSrc} className={styles.item__img} />
+                    <img
+                        src={mapImgSrc}
+                        className={classNames(styles.item__img, styles.item__img__map)}
+                    />
                     <p className={styles.item__title}>Твой путь к идеальному коду</p>
                     <p className={styles.item__text}>
                         Проходи задания и получай бонусы.

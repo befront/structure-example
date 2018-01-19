@@ -30,7 +30,6 @@ $section-item-text-color: #000;
         font: 1.5em "UbuntuBold", sans-serif;
         line-height: 1;
         color: $section-item-number-color;
-        margin-top: 20px;
     }
 
     &__title {
@@ -46,9 +45,127 @@ $section-item-text-color: #000;
         color: $section-item-text-color;
         margin-top: 10px;
     }
+
+    &__img {
+        margin: 0 auto;
+        background-repeat: no-repeat;
+
+        &__first {
+            background-image: url('./img/step1_XS.png');
+            width: 205px;
+            height: 209px;
+        }
+
+        &__second {
+            // background-image: url('./img/step2_XS.png');
+
+        }
+
+        &__third {
+            background-image: url('./img/step3_XS.png');
+            width: 210px;
+            height: 245px;
+        }
+    }
 }
 
 .btn {
     width: 100%;
     margin-top: 30px;
+}
+
+@media all and (min-width: $screen-sm-min) {
+    .item {
+        &__img {
+            &__first {
+                background-image: url('./img/step1_S.png');
+                width: 255px;
+                height: 242px;
+            }
+    
+            &__second {
+                background-image: url('./img/step2_S.png');
+                width: 228px;
+                height: 244px;
+            }
+    
+            &__third {
+                background-image: url('./img/step3_S.png');
+                width: 251px;
+                height: 279px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .item {
+        &__img {
+            &__first {
+                background-image: url('./img/step1_M.png');
+                width: 294px;
+                height: 275px;
+            }
+    
+            &__second {
+                background-image: url('./img/step2_M.png');
+                width: 257px;
+                height: 277px;
+            }
+    
+            &__third {
+                background-image: url('./img/step3_M.png');
+                width: 284px;
+                height: 318px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .item {
+        &__img {
+            &__first {
+                background-image: url('./img/step1_L.png');
+                width: 347px;
+                height: 307px;
+            }
+    
+            &__second {
+                background-image: url('./img/step2_L.png');
+                width: 300px;
+                height: 321px;
+            }
+    
+            &__third {
+                background-image: url('./img/step3_L.png');
+                width: 315px;
+                height: 351px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $screen-xl-min) {
+    .item {
+        &__img {
+            &__first {
+                background-image: url('./img/step1_XL.png');
+                width: 405px;
+                height: 368px;
+            }
+    
+            &__second {
+                background-image: url('./img/step2_XL.png');
+                width: 363px;
+                height: 386px;
+            }
+    
+            &__third {
+                background-image: url('./img/step3_XL.png');
+                width: 342px;
+                height: 448px;
+            }
+        }
+    }
 }

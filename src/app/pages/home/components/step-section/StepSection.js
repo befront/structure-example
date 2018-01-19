@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import { Button } from 'appComponents/core/button';
 
@@ -11,13 +12,13 @@ const StepSection = () => (
             <p className={styles.title}>Достигай новых высот с BeFront</p>
             <div className={styles.list}>
                 <div className={styles.item}>
-                    <img src="" className={styles.item__img} />
+                    <div className={classNames(styles.item__img, styles.item__img__first)} />
                     <p className={styles.item__number}>01</p>
                     <p className={styles.item__title}>Проходи курсы</p>
                     <p className={styles.item__text}>Читай статьи и смотри обучающие видео</p>
                 </div>
                 <div className={styles.item}>
-                    <img src="" className={styles.item__img} />
+                    <div className={classNames(styles.item__img, styles.item__img__second)} />
                     <p className={styles.item__number}>02</p>
                     <p className={styles.item__title}>Выполняй задания</p>
                     <p className={styles.item__text}>
@@ -25,7 +26,7 @@ const StepSection = () => (
                     </p>
                 </div>
                 <div className={styles.item}>
-                    <img src="" className={styles.item__img} />
+                    <div className={classNames(styles.item__img, styles.item__img__third)} />
                     <p className={styles.item__number}>03</p>
                     <p className={styles.item__title}>Достигай новых высот</p>
                     <p className={styles.item__text}>
