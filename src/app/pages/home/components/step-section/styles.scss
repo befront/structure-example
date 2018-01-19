@@ -1,0 +1,54 @@
+$section-bg-color: #daf8ff;
+$section-title-color: #093444;
+$section-item-number-color: #289982;
+$section-item-title-color: #000;
+$section-item-text-color: #000;
+
+.section {
+    background-color: $section-bg-color;
+    padding: 30px 0;
+}
+
+.title {
+    font: 1.25em "UbuntuBold", sans-serif;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+.list {
+    margin-top: 12px;
+}
+
+.item {
+    text-align: center;
+
+    &:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    &__number {
+        font: 1.5em "UbuntuBold", sans-serif;
+        line-height: 1;
+        color: $section-item-number-color;
+        margin-top: 20px;
+    }
+
+    &__title {
+        font: 1.125em "UbuntuBold", sans-serif;
+        line-height: 1;
+        color: $section-item-title-color;
+        margin-top: 15px;
+    }
+
+    &__text {
+        font: 0.9375em "UbuntuRegular", sans-serif;
+        line-height: 1.47em;
+        color: $section-item-text-color;
+        margin-top: 10px;
+    }
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+}

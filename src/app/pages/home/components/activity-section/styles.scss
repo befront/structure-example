@@ -1,5 +1,33 @@
 $section-bg-color: #f1fcfe;
+$section-item-title-color: #010101;
+$section-item-text-color: #010101;
 
 .section {
     background-color: $section-bg-color;
+    padding: 25px 0;  
+}
+
+.item {
+    text-align: center;
+
+    &:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__title {
+        font: 1.125em "UbuntuBold", sans-serif;
+        line-height: 1;
+        color: $section-item-title-color;
+    }
+
+    &__text {
+        font: 0.9375em "UbuntuRegular", sans-serif;
+        line-height: 1.47em;
+        color: $section-item-text-color;
+        margin-top: 10px;
+    }
 }

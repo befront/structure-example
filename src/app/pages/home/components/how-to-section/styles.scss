@@ -1,0 +1,60 @@
+$section-bg-color: #fff;
+$section-title-color: #093444;
+$section-item-first-bg-color: #e48118;
+$section-item-second-bg-color: #34bfa3;
+$section-item-third-bg-color: #319ab3;
+$section-item-title-color: #fff;
+$section-item-text-color: #fff;
+
+.section {
+    background-color: $section-bg-color;
+    padding: 40px 0;
+}
+
+.title {
+    font: 1.25em "UbuntuBold", sans-serif;
+    line-height: 1;
+    color: $section-title-color;
+    margin-bottom: 15px;
+}
+
+.item {
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 8px 29px 0 rgba(202, 202, 202, 0.42);
+    
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    &.first {
+        background-color: $section-item-first-bg-color;
+    }
+
+    &.second {
+        background-color: $section-item-second-bg-color;
+    }
+
+    &.third {
+        background-color: $section-item-third-bg-color;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__title {
+        font: 1.125em "UbuntuBold", sans-serif;
+        line-height: 1;
+        color: $section-item-title-color;
+        margin-top: 20px;
+    }
+
+    &__text {
+        font: 0.9375em "UbuntuRegular", sans-serif;
+        line-height: 1.47em;
+        color: $section-item-text-color;
+        margin-top: 15px;
+    }
+}
