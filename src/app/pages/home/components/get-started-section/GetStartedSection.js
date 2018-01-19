@@ -21,7 +21,7 @@ const GetStartedSection = () => (
             <p className={styles.text}>
                 Начни сегодня, чтобы завтра стать специалистом
             </p>
-            <Button className={styles.btn}>Начать</Button>
+            <Button size="lg" className={styles.btn}>Начать</Button>
             <img src={pandaImgSrc} className={styles.img} />
         </div>    
     </div>

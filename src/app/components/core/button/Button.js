@@ -6,12 +6,13 @@ import styles from './styles.scss';
 type Props = {
     children: React.Node,
     className?: string,
-    type?: string
+    type?: string,
+    size?: string
 };
 
-const Button = ({ children, className, type, onClick }: Props) => (
+const Button = ({ children, className, type, size, onClick }: Props) => (
     <button
-        className={classNames(styles.button, { [className]: className })}
+        className={classNames(styles.button, { [className]: className }, styles[size])}
         onClick={onClick}
     >
         { children }
@@ -22,6 +23,7 @@ Button.defaultProps = {
     children: <div />,
     className: '',
     type: 'button',
+    size: '',
     onClick: () => {}
 };
 

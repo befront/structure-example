@@ -36,7 +36,7 @@ const StepSection = () => (
                     </p>
                 </div>
             </div>
-            <Button className={styles.btn}>Начать</Button>
+            <Button size="lg" className={styles.btn}>Начать</Button>
         </div>
     </div>
 );
