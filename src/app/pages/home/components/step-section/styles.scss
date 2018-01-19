@@ -57,8 +57,9 @@ $section-item-text-color: #000;
         }
 
         &__second {
-            // background-image: url('./img/step2_XS.png');
-
+            background-image: url('./img/step2_XS.png');
+            width: 196px;
+            height: 211px;
         }
 
         &__third {

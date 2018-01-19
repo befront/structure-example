@@ -46,10 +46,13 @@ $footer-active-facebook-link-color: #24448a;
 .nav {
     margin-top: 25px;
     text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .link {
-    font: 1.25em "UbuntuMedium", sans-serif;
+    font: 1.25em "UbuntuMonoBold", sans-serif;
     line-height: 1;
     cursor: pointer;
     margin-top: 25px;

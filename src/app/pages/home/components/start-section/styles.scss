@@ -33,7 +33,7 @@ $section-main-square-bd-color: #e48118;
 
         &__second {
             top: 0;
-            left: 0;
+            left:0;
         }
     }
 
@@ -95,5 +95,29 @@ $section-main-square-bd-color: #e48118;
         height: 4px;
         background-color: $section-text-line-bg-color;
         margin-top: 15px;
+    }
+}
+
+@media all and (min-width: $screen-sm-min) {
+    .img {
+        background-image: url('./img/panda_S.png');
+        width: 312px;
+        height: 146px;
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .img {
+        background-image: url('./img/panda_M.png');
+        width: 383px;
+        height: 183px;
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .img {
+        background-image: url('./img/panda_L_XL.png');
+        width: 417px;
+        height: 199px;
     }
 }
