@@ -19,6 +19,9 @@ export default {
   
     // APP PAGES FOLDER URL
     APP_PAGES_DIRECTORY: './src/app/pages',
+
+    // APP HOC FOLDER URL
+    APP_HOC_DIRECTORY: './src/app/hoc',
   
     // BUILD FOLDER URL FOR REACT APPLICATION
     BUILD_DIRECTORY: './build',
