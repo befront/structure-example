@@ -11,8 +11,9 @@ $section-item-text-color: #000;
 
 .title {
     font: 1.25em "UbuntuBold", sans-serif;
-    line-height: 1.25em;
+    line-height: 1;
     text-align: center;
+    color: $section-title-color;
 }
 
 .list {
@@ -76,8 +77,33 @@ $section-item-text-color: #000;
 }
 
 @media all and (min-width: $screen-sm-min) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .list {
+        margin-top: 30px;
+    }
+
     .item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        &__content {
+            flex: 1;
+            text-align: left;
+            margin-left: 35px;
+        }
+
+        &__wrap {
+            flex-basis: 255px;
+            width: 255px;
+        }
+        
         &__img {
+            margin: 0 auto;
+
             &__first {
                 background-image: url('./img/step1_S.png');
                 width: 255px;
@@ -97,10 +123,53 @@ $section-item-text-color: #000;
             }
         }
     }
+    
+    .btn {
+        display: block;
+        width: 200px;
+        margin: 30px auto 0 auto;
+    }
 }
 
 @media all and (min-width: $screen-md-min) {
+    .title {
+        font-size: 1.85em;
+    }
+
+    .list {
+        margin-top: 50px;
+    }
+
+    .btn {
+        font-size: 1.125em;
+        padding: 23px 20px;
+        border-radius: 32px;
+        width: 240px;
+    }
+
     .item {
+        &__content {
+            margin-left: 30px;
+        }
+
+        &__wrap {
+            flex-basis: 294px;
+            width: 294px;
+        }
+
+        &__number {
+            font-size: 2.5em;
+        }
+    
+        &__title {
+            font-size: 1.25em;
+            margin-top: 25px;
+        }
+    
+        &__text {
+            font-size: 1.125em;
+        }
+
         &__img {
             &__first {
                 background-image: url('./img/step1_M.png');
@@ -124,7 +193,22 @@ $section-item-text-color: #000;
 }
 
 @media all and (min-width: $screen-lg-min) {
+    .title {
+        font-size: 2.25em;
+    }
+
+    .list {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
     .item {
+        &__wrap {
+            flex-basis: 347px;
+            width: 347px;
+        }
+
         &__img {
             &__first {
                 background-image: url('./img/step1_L.png');
@@ -149,6 +233,11 @@ $section-item-text-color: #000;
 
 @media all and (min-width: $screen-xl-min) {
     .item {
+        &__wrap {
+            width: 405px;
+            flex-basis: 405px;
+        }
+
         &__img {
             &__first {
                 background-image: url('./img/step1_XL.png');
@@ -164,7 +253,7 @@ $section-item-text-color: #000;
     
             &__third {
                 background-image: url('./img/step3_XL.png');
-                width: 342px;
+                width: 392px;
                 height: 448px;
             }
         }

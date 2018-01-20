@@ -49,6 +49,7 @@ $section-main-square-bd-color: #e48118;
 }
 
 .img {
+    margin: 0 auto;
     background-image: url('./img/panda_XS.png');
     background-repeat: no-repeat;
     width: 283px;
@@ -99,6 +100,15 @@ $section-main-square-bd-color: #e48118;
 }
 
 @media all and (min-width: $screen-sm-min) {
+    .logo {
+        width: 286px;
+    }
+
+    .text {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
     .img {
         background-image: url('./img/panda_S.png');
         width: 312px;
@@ -107,6 +117,19 @@ $section-main-square-bd-color: #e48118;
 }
 
 @media all and (min-width: $screen-md-min) {
+    .section {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-bottom: 60px;
+    }
+
+    .main {
+        background-color: transparent;
+        padding: 0;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+
     .img {
         background-image: url('./img/panda_M.png');
         width: 383px;

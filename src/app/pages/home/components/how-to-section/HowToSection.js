@@ -12,7 +12,7 @@ const HowToSection = () => (
     <div className={styles.section}>
         <div className={gridStyles.containerFluid}>
             <p className={styles.title}>Учиться проще простого!</p>
-            <div className={styles.content}>
+            <div className={styles.list}>
                 <div className={classNames(styles.item, styles.first)}>
                     <img src={numberFirstImgSrc} className={styles.item__img} />
                     <p className={styles.item__title}>Занимайся где угодно</p>

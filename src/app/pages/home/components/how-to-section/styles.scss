@@ -59,3 +59,46 @@ $section-item-text-color: #fff;
         margin-top: 15px;
     }
 }
+
+@media all and (min-width: $screen-sm-min) {
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .title {
+        font-size: 1.875em;
+    }
+
+    .item {
+        &__title {
+            font-size: 1.25em;
+        }
+
+        &__text {
+            font-size: 1.125em;
+            line-height: 1.33em;
+        }
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .list {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .title {
+        font-size: 2.25em;
+    }
+
+    .item {
+        flex: 1;
+
+        &:not(:first-child) {
+            margin-top: 0;
+            margin-left: 30px;
+        }
+    }
+}

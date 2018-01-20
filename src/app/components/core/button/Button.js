@@ -12,7 +12,7 @@ type Props = {
 
 const Button = ({ children, className, type, size, onClick }: Props) => (
     <button
-        className={classNames(styles.button, { [className]: className }, styles[size])}
+        className={classNames(styles.button, styles[size], { [className]: className })}
         onClick={onClick}
     >
         { children }

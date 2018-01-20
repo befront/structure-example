@@ -13,40 +13,52 @@ const ActivitySection = () => (
         <div className={gridStyles.containerFluid}>
             <div className={styles.list}>
                 <div className={styles.item}>
-                    <img
-                        src={gameImgSrc}
-                        className={classNames(styles.item__img, styles.item__img__game)} 
-                    />
-                    <p className={styles.item__title}>Учись играя</p>
-                    <p className={styles.item__text}>
-                        Проходи задания и получай бонусы.
-                        Используй достижения для открытия
-                        новых уроков
-                    </p>
+                    <div className={styles.item__wrap}>
+                        <img
+                            src={gameImgSrc}
+                            className={classNames(styles.item__img, styles.item__img__game)} 
+                        />
+                    </div>
+                    <div className={styles.item__content}>
+                        <p className={styles.item__title}>Учись играя</p>
+                        <p className={styles.item__text}>
+                            Проходи задания и получай бонусы.
+                            Используй достижения для открытия
+                            новых уроков
+                        </p>
+                    </div>
                 </div>
                 <div className={styles.item}>
-                    <img
-                        src={docsImgSrc}
-                        className={classNames(styles.item__img, styles.item__img__docs)}
-                    />
-                    <p className={styles.item__title}>Множество заданий</p>
-                    <p className={styles.item__text}>
-                        Задания на любой вкус и для любого
-                        уровня навыков. От новичка
-                        до эксперта
-                    </p>
+                    <div className={styles.item__wrap}>
+                        <img
+                            src={docsImgSrc}
+                            className={classNames(styles.item__img, styles.item__img__docs)}
+                        />
+                    </div>
+                    <div className={styles.item__content}>
+                        <p className={styles.item__title}>Множество заданий</p>
+                        <p className={styles.item__text}>
+                            Задания на любой вкус и для любого
+                            уровня навыков. От новичка
+                            до эксперта
+                        </p>
+                    </div>
                 </div>
                 <div className={styles.item}>
-                    <img
-                        src={mapImgSrc}
-                        className={classNames(styles.item__img, styles.item__img__map)}
-                    />
-                    <p className={styles.item__title}>Твой путь к идеальному коду</p>
-                    <p className={styles.item__text}>
-                        Проходи задания и получай бонусы.
-                        Используй достижения для открытия
-                        новых уроков
-                    </p>
+                    <div className={styles.item__wrap}>
+                        <img
+                            src={mapImgSrc}
+                            className={classNames(styles.item__img, styles.item__img__map)}
+                        />
+                    </div>
+                    <div className={styles.item__content}>
+                        <p className={styles.item__title}>Твой путь к идеальному коду</p>
+                        <p className={styles.item__text}>
+                            Проходи задания и получай бонусы.
+                            Используй достижения для открытия
+                            новых уроков
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

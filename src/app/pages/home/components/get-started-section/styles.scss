@@ -81,3 +81,38 @@ $section-square-bd-color: #e48118;
         background-color: $section-round-line-color;
     }
 }
+
+@media all and (min-width: $screen-sm-min) {
+    .btn {
+        display: block;
+        width: 200px;
+        margin: 30px auto 0 auto;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width: $screen-md-min) {
+    .title {
+        font-size: 1.875em;
+    }
+
+    .text {
+        font-size: 1.125em;
+    }
+
+    .btn {
+        font-size: 1.125em;
+        padding: 23px 20px;
+        border-radius: 32px;
+        width: 240px;
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .title {
+        font-size: 2.25em;
+    }
+}

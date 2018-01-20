@@ -15,8 +15,6 @@ $section-item-text-color: #010101;
     }
 
     &__img {
-        max-width: 100%;
-        
         &__game {
             width: 242px;
         }
@@ -46,6 +44,21 @@ $section-item-text-color: #010101;
 
 @media all and (min-width: $screen-sm-min) {
     .item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        &__content {
+            text-align: left;
+            flex: 1;
+        }
+
+        &__wrap {
+            width: 242px;
+            flex-basis: 242px;
+            text-align: center;
+        }
+
         &__img {
             &__docs {
                 width: 163px;
@@ -58,13 +71,57 @@ $section-item-text-color: #010101;
     }
 }
 
+@media all and (min-width: $screen-md-min) {
+    .item {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+
+        &__content {
+            margin-left: 30px;
+        }
+    }
+}
+
 @media all and (min-width: $screen-lg-min) {
     .item {
+        display: block;
+        flex: 1;
+
+        &__wrap {
+            margin: 0 auto;
+            width: 256px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 173px;
+        }
+
+        &__content {
+            text-align: center;
+        }
+
         &__img {
             &__game {
                 width: 256px;
             }
         }
+
+        &__title {
+            font-size: 1.25em;
+        }
+
+        &__text {
+            font-size: 1em;
+            line-height: 1.38em;
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
     }
 }
 
