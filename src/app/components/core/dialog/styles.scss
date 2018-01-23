@@ -1,0 +1,63 @@
+$dialog-bg-color: #fff;
+
+.dialog {
+    max-width: 90%;
+    width: 290px;
+    margin: 20px 0;
+    align-self: center;
+    position: relative;
+    background-color: $dialog-bg-color;
+    opacity: 0;
+    transition-delay: .1s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .35s;
+    transition-property: opacity, transform;
+    transform: translateY(-4rem);
+    border-radius: 3px;
+  
+    &.active {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  
+    // &__close {
+    //   font-size: 0.875em;
+    //   position: absolute;
+    //   z-index: 2;
+    //   top: 15px;
+    //   right: 15px;
+    //   color: $nobel;
+    //   cursor: pointer;
+    //   transition: color 0.3s ease;
+  
+    //   &:hover {
+    //     color: $havelock-blue;
+    //   }
+  
+    //   &--inverted {
+    //     color: $white;
+  
+    //     &:hover {
+    //       color: $white;
+    //     }
+    //   }
+    // }
+  }
+  
+  @media all and (min-width: $screen-sm-min) {
+    .dialog {
+      width: 390px;
+    }
+  }
+  
+  @media all and (min-width: $screen-md-min) {
+    .dialog {
+      width: 450px;
+    }
+  }
+  
+  @media all and (min-width: $screen-lg-min) {
+    .dialog {
+      width: 730px;
+    }
+  }

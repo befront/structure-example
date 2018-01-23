@@ -14,7 +14,7 @@ const HomePage = () => (
     <div className={styles.page}>
         <Header />
         <div className={styles.content}>
-            <StartSection />
+            {/* <StartSection /> */}
             <ActivitySection />
             <StepSection />
             <HowToSection />
