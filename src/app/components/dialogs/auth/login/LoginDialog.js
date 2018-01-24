@@ -4,9 +4,11 @@ import { DialogHOC } from 'appHoc/dialog';
 
 import { LoginForm } from 'appComponents/forms/auth/login';
 
-const LoginDialog = () => (
-    <div className="login-dialog">
-        <LoginForm />
+import styles from './styles.scss';
+
+const LoginDialog = ({ showDialog }) => (
+    <div className={styles.dialog}>
+        <LoginForm showDialog={showDialog} />
     </div>
 );
 

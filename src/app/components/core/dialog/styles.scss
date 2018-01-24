@@ -41,7 +41,7 @@ $dialog-close-hover-color: #cad9dc;
 }
 
 .header {
-    margin: 5px 0 20px 0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -54,12 +54,22 @@ $dialog-close-hover-color: #cad9dc;
 @media all and (min-width: $screen-sm-min) {
     .dialog {
         width: 510px;
+        padding: 30px 15px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 1.5em;
     }
 }
 
 @media all and (min-width: $screen-md-min) {
     .dialog {
         width: 570px;
+        padding: 30px;
     }
 }
 

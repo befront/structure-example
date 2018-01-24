@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './styles.scss';
 
-const SimpleLink = ({ children, routeTo, className }) => (
+const SimpleLink = ({ onClick, children, routeTo, className }) => (
     routeTo ? (
         <Link
             to={routeTo}
@@ -13,7 +13,7 @@ const SimpleLink = ({ children, routeTo, className }) => (
             { children }
         </Link>
     ) : (
-        <a className={classNames(styles.link, { [className]: className })}>
+        <a onClick={onClick} className={classNames(styles.link, { [className]: className })}>
             { children }
         </a>
     )

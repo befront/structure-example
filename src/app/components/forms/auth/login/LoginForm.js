@@ -9,7 +9,7 @@ import { SimpleLink } from 'appComponents/core/simple-link';
 
 import styles from './styles.scss';
 
-const LoginForm = ({ onSubmit }) => (
+const LoginForm = ({ onSubmit, showDialog }) => (
     <div className={styles.container}>
         <Form className={styles.form} model="forms.login" onSubmit={onSubmit}>
             <InputControl 
@@ -24,7 +24,7 @@ const LoginForm = ({ onSubmit }) => (
         </Form>
         <div className={styles.footer}>
             <p className={styles.text}>Еще не регистрировались?</p>
-            <SimpleLink className={styles.link}>Регистрация</SimpleLink>
+            <SimpleLink className={styles.link} onClick={() => { showDialog('register'); }}>Регистрация</SimpleLink>
         </div>
     </div>
 );

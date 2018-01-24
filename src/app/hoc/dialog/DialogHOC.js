@@ -15,11 +15,11 @@ const DialogHOC = options => (
             }
 
             handleClose() {
-                this.props.onClose(options.name);
+                this.props.hideDialog(options.name);
             }
         
             render() {
-                const { isActive, onClose, title } = this.props;
+                const { isActive, title } = this.props;
         
                 return (
                     <Dialog
@@ -34,11 +34,12 @@ const DialogHOC = options => (
         }
 
         const mapStateToProps = state => ({
-            isActive: state.dialogs.dialogs[options.name]
+            isActive: state.dialogs.shownDialogName === options.name
         });
 
         const mapDispatchToProps = {
-            onClose: dialogsOperations.hideDialog
+            hideDialog: dialogsOperations.hideDialog,
+            showDialog: dialogsOperations.showDialog
         };
 
         return connect(mapStateToProps, mapDispatchToProps)(DialogHOC);
