@@ -1,4 +1,4 @@
-$backdrop-bg-color: #000;
+$backdrop-bg-color: #070605;
 
 .overlay {
     position: fixed;
@@ -24,6 +24,7 @@ $backdrop-bg-color: #000;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
 
 .backdrop {

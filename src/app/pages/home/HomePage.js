@@ -10,9 +10,9 @@ import { GetStartedSection } from './components/get-started-section';
 
 import styles from './styles.scss';
 
-const HomePage = () => (
+const HomePage = ({ showDialog }) => (
     <div className={styles.page}>
-        <Header />
+        <Header showDialog={showDialog} />
         <div className={styles.content}>
             {/* <StartSection /> */}
             <ActivitySection />

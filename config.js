@@ -16,6 +16,9 @@ export default {
   
     // APP COMPONENTS FOLDER URL
     APP_COMPONENTS_DIRECTORY: './src/app/components',
+
+    // APP CONTAINERS FOLDER URL
+    APP_CONTAINERS_DIRECTORY: './src/app/containers',
   
     // APP PAGES FOLDER URL
     APP_PAGES_DIRECTORY: './src/app/pages',

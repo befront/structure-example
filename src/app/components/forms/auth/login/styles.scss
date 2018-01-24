@@ -1,0 +1,23 @@
+$text-color: #869ca0;
+$footer-bd-color: #cad9dc;
+
+.btn {
+    width: 100%;
+    display: block;
+    border-radius: 27px;
+    padding: 21px 20px;
+    font-size: 1em;
+}
+
+.footer {
+    padding-top: 20px;
+    border-top: 1px solid $footer-bd-color;
+    margin-top: 20px;
+}
+
+.text {
+    font: 1em "UbuntuRegular", sans-serif;
+    line-height: 1;
+    color: $text-color;
+    margin-bottom: 15px;
+}

@@ -19,10 +19,14 @@ const DialogHOC = options => (
             }
         
             render() {
-                const { isActive, onClose } = this.props;
+                const { isActive, onClose, title } = this.props;
         
                 return (
-                    <Dialog isActive={isActive} onClose={this.handleClose}>
+                    <Dialog
+                        isActive={isActive}
+                        onClose={this.handleClose}
+                        title={title}
+                    >
                         <DialogComponent {...this.props} />
                     </Dialog>
                 );

@@ -5,6 +5,9 @@ import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import { Route } from 'react-router-dom';
 
+import { LoginDialog } from 'appComponents/dialogs/auth/login';
+import { RegisterDialog } from 'appComponents/dialogs/auth/register';
+
 import 'appAssets/styles/styles.scss';
 
 import { store, routes } from 'appConfig';
@@ -23,6 +26,9 @@ render(
                         component={route.component}
                     />
                 ))}
+
+                <LoginDialog title="Вход" />
+                <RegisterDialog title="Регистрация" />
             </div>
         </ConnectedRouter>
     </Provider>,

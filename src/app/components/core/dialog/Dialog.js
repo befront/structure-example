@@ -7,7 +7,7 @@ import { Overlay } from 'appComponents/core/overlay';
 
 import styles from './styles.scss';
 
-const Dialog = ({ isActive, onClose, children, className }) => (
+const Dialog = ({ isActive, onClose, children, className, title }) => (
     <Overlay
         isActive={isActive}
         onClick={onClose}
@@ -20,7 +20,12 @@ const Dialog = ({ isActive, onClose, children, className }) => (
             )}
         >
             <span className={styles.close} onClick={onClose}>Закрыть</span>
-            <div className={styles.content}>
+            { title && (
+                <div className={styles.header}>
+                    <p className={styles.title}> { title }</p>
+                </div>
+            )}
+            <div className={styles.body}>
                 { children }
             </div>
         </div>

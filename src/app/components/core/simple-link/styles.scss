@@ -1,0 +1,14 @@
+$link-color: #34bfa3;
+
+.link {
+    display: block;
+    font: 1em "UbuntuRegular", sans-serif;
+    line-height: 1;
+    color: $link-color;
+    cursor: pointer;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $link-color;
+    }
+}

@@ -1,4 +1,7 @@
 $dialog-bg-color: #fff;
+$dialog-title-color: #093444;
+$dialog-close-color: #cad9dc;
+$dialog-close-hover-color: #cad9dc;
 
 .dialog {
     max-width: 90%;
@@ -13,51 +16,61 @@ $dialog-bg-color: #fff;
     transition-duration: .35s;
     transition-property: opacity, transform;
     transform: translateY(-4rem);
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 20px 15px;
   
     &.active {
       opacity: 1;
       transform: translateY(0%);
     }
-  
-    // &__close {
-    //   font-size: 0.875em;
-    //   position: absolute;
-    //   z-index: 2;
-    //   top: 15px;
-    //   right: 15px;
-    //   color: $nobel;
-    //   cursor: pointer;
-    //   transition: color 0.3s ease;
-  
-    //   &:hover {
-    //     color: $havelock-blue;
-    //   }
-  
-    //   &--inverted {
-    //     color: $white;
-  
-    //     &:hover {
-    //       color: $white;
-    //     }
-    //   }
-    // }
-  }
-  
-  @media all and (min-width: $screen-sm-min) {
-    .dialog {
-      width: 390px;
+}
+
+.close {
+    font-size: 1em;
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    color: $dialog-close-color;
+    cursor: pointer;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $dialog-close-hover-color;
     }
-  }
+}
+
+.header {
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+
+.title {
+    font: 1.25em "UbuntuBold", sans-serif;
+    line-height: 1;
+    color: $dialog-title-color;
+}
   
-  @media all and (min-width: $screen-md-min) {
+@media all and (min-width: $screen-sm-min) {
     .dialog {
-      width: 450px;
+        width: 510px;
     }
-  }
-  
-  @media all and (min-width: $screen-lg-min) {
+}
+
+@media all and (min-width: $screen-md-min) {
     .dialog {
-      width: 730px;
+        width: 570px;
     }
-  }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .dialog {
+        width: 610px;
+    }
+}
+
+@media all and (min-width: $screen-xl-min) {
+    .dialog {
+        width: 540px;
+    }
+}
