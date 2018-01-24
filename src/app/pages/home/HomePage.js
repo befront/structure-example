@@ -16,9 +16,9 @@ const HomePage = ({ showDialog }) => (
         <div className={styles.content}>
             {/* <StartSection /> */}
             <ActivitySection />
-            <StepSection />
+            <StepSection showDialog={showDialog} />
             <HowToSection />
-            <GetStartedSection />
+            <GetStartedSection showDialog={showDialog} />
         </div>
         <Footer />
     </div>

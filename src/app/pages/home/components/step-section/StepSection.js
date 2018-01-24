@@ -6,7 +6,7 @@ import { Button } from 'appComponents/core/button';
 import gridStyles from 'appAssets/styles/grid.scss';
 import styles from './styles.scss';
 
-const StepSection = () => (
+const StepSection = ({ showDialog }) => (
     <div className={styles.section}>
         <div className={gridStyles.containerFluid}>
             <p className={styles.title}>Достигай новых высот с BeFront</p>
@@ -48,7 +48,7 @@ const StepSection = () => (
                     </div>
                 </div>
             </div>
-            <Button size="lg" className={styles.btn}>Начать</Button>
+            <Button size="lg" className={styles.btn} onClick={() => { showDialog('register'); }}>Начать</Button>
         </div>
     </div>
 );

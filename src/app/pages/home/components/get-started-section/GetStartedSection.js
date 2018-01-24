@@ -8,7 +8,7 @@ import styles from './styles.scss';
 
 import pandaImgSrc from './img/panda.png';
 
-const GetStartedSection = () => (
+const GetStartedSection = ({ showDialog }) => (
     <div className={styles.section}>
         <div className={styles.round}>
             <div className={styles.round__line} />
@@ -21,7 +21,7 @@ const GetStartedSection = () => (
             <p className={styles.text}>
                 Начни сегодня, чтобы завтра стать специалистом
             </p>
-            <Button size="lg" className={styles.btn}>Начать</Button>
+            <Button size="lg" className={styles.btn} onClick={() => { showDialog('register'); }}>Начать</Button>
             <img src={pandaImgSrc} className={styles.img} />
         </div>    
     </div>
