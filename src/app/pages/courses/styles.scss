@@ -1,0 +1,27 @@
+.title {
+    font-size: 20px;
+}
+
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.cardBtn {
+    margin-top: 10px;
+}
+
+.cardTopics {
+    margin-top: 10px;
+}

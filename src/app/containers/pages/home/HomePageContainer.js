@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { dialogsOperations } from 'appAPI/dialogs';
-
 import { HomePage } from 'appPages/home';
 
 class HomePageContainer extends Component {
@@ -13,20 +11,14 @@ class HomePageContainer extends Component {
     }
     
     render() {
-        const { showDialog } = this.props;
-
         return (
-            <HomePage
-                showDialog={showDialog}
-            />
+            <HomePage />
         );
     }
 }
 
 const mapStateToProps = state => ({});
 
-const mapDispatchToProps = {
-    showDialog: dialogsOperations.showDialog
-};
+const mapDispatchToProps = {};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);

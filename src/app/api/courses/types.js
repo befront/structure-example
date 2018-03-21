@@ -1,0 +1,9 @@
+const GET_COURSES = 'courses/GET_COURSES';
+const GET_COURSES_SUCCESS = 'courses/GET_COURSES_SUCCESS';
+const GET_COURSES_ERROR = 'courses/GET_COURSES_ERROR';
+
+export default {
+    GET_COURSES,
+    GET_COURSES_SUCCESS,
+    GET_COURSES_ERROR
+};

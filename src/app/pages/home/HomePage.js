@@ -1,26 +1,19 @@
 import React from 'react';
 
-import { Header } from './components/header';
-import { Footer } from './components/footer';
-import { StartSection } from './components/start-section';
-import { ActivitySection } from './components/activity-section';
-import { StepSection } from './components/step-section';
-import { HowToSection } from './components/how-to-section';
-import { GetStartedSection } from './components/get-started-section';
+import { Link } from 'react-router-dom';
 
 import styles from './styles.scss';
 
 const HomePage = ({ showDialog }) => (
     <div className={styles.page}>
-        <Header showDialog={showDialog} />
-        <div className={styles.content}>
-            {/* <StartSection /> */}
-            <ActivitySection />
-            <StepSection showDialog={showDialog} />
-            <HowToSection />
-            <GetStartedSection showDialog={showDialog} />
+        <div className={styles.header}>
+            <Link to="/" className={styles.logo}>BEFRONT</Link>
+            <ul className={styles.nav}>
+                <li className={styles.item}>
+                    <Link to="/courses" className={styles.link}>КУРСЫ</Link>
+                </li>
+            </ul>
         </div>
-        <Footer />
     </div>
 );
 
