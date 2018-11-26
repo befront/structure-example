@@ -1,10 +1,10 @@
-import { HomePageContainer } from 'appContainers/pages/home';
+import { HomePage } from 'appComponents/pages';
 
 const routes = [
     {
         path: '/',
         exact: true,
-        component: HomePageContainer
+        component: HomePage
     }
 ];
 

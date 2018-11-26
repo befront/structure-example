@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
-import { createReducer } from 'appUtils';
+
+import { createReducer } from 'appUtils'; // path to utils is 'src/app/utils/createReducer';
 
 import types from './types';
 
